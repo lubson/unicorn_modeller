@@ -1,0 +1,10 @@
+<h3>Strategies</h3>
+
+<ul>
+  <% @project.strategies.each do |strategy| %>
+  <li>
+    <h4><%= strategy.name %></h4>
+    <p><%= strategy.description %></p>
+  </li>
+  <% end %>
+</ul>
