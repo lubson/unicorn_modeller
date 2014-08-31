@@ -15,5 +15,12 @@
   <%= @project.starred %>
 </p>
 
+<p>Strategies:</p>
+<ul>
+	<% @project.strategies.each do |strategy| %>
+	<li><%= strategy.name %></li>
+	<% end %>
+</ul>
+
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>

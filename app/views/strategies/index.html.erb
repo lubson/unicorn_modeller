@@ -1,0 +1,31 @@
+<h1>Listing strategies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Active from</th>
+      <th>Active to</th>
+      <th>Project</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @strategies.each do |strategy| %>
+      <tr>
+        <td><%= strategy.name %></td>
+        <td><%= strategy.description %></td>
+        <td><%= strategy.active_from %></td>
+        <td><%= strategy.active_to %></td>
+        <td><%= strategy.project.vision %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
